@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand"></a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>				
+			</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right" style="font-family:'Raleway'; font-size:200;">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Twitter</a>
+								<a href="#">Facebook</a>
+								<a href="#">LinkedIn</a>
+								<a href="#">Reddit</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Blog</a></li>	
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<header>
+			<h1><a href="index.html" style="text-decoration:none; font-family:'Raleway'; font-size:200;">Dynamic Story</a></h1>
+			<p class="lead" style="font-family:'Raleway'; font-size:100;">Make your opinion heard</p>
+		</header>
+		<div class="navbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#order">Order Now</a></li>
+			</ul>
+		</div>
+		<div class="carousel slide" id="carousel-example">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example" data-slide-to="1"></li>
+				<li data-target="#carousel-example" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="http://lorempixel.com/1170/300" alt="image">
+					<div class="carousel-caption">This is a caption</div>
+				</div>
+				<div class="item">
+					<img src="http://lorempixel.com/1170/300/people" alt="image">
+					<div class="carousel-caption">This is a caption</div>
+				</div>
+				<div class="item">
+					<img src="http://lorempixel.com/1170/300/business" alt="image">
+					<div class="carousel-caption">This is a caption</div>
+				</div>								
+			</div>				
+			<a href="#carousel-example" class="left carousel-control" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a href="#carousel-example" class="right carousel-control" data-slide="next">
+				<span class="icon-next"></span>
+			</a>					
+		</div>	
+		<section id="features">
+			<h3>Product Features</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quibusdam?</p>
+			<hr>
+			<div class="row">
+				<div class="col-xs-6 col-md-4">
+					<div class="media">
+						<a href="" class="pull-left">
+							<img src="http://lorempixel.com/64/64" alt="image">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Feature name</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quasi.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="media">
+						<a href="" class="pull-left">
+							<img src="http://lorempixel.com/64/64" alt="image">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Feature name</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quasi.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="media">
+						<a href="" class="pull-left">
+							<img src="http://lorempixel.com/64/64" alt="image">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Feature name</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quasi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section id="testimonials">
+			<div class="panel">
+				<div class="panel-heading">A few words from our customers.</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ea!
+							<small>John from
+								<cite>Source</cite>
+							</small>
+						</blockquote>
+					</div>
+					<div class="col-xs-6">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, placeat.
+							<small>John from
+								<cite>Source</cite>
+							</small>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="order">
+			<div class="well well-lg">
+				<h3 class="text-center">Order now!</h3>
+				<p class="text-center">Receive a great bonus.</p>
+				<p class="text-center">
+					<a href="#" class="btn btn-primary">Place order &rarr;</a>
+				</p>
+			</div>
+		</section>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
